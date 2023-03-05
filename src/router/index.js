@@ -25,6 +25,11 @@ const routes = [
     component: layout,
     children: [
       {
+        // 默认配置二级路径
+        path: '',
+        redirect: '/layout/article'
+      },
+      {
         path: 'article',
         component: article
       },
